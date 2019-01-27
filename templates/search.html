@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd"});
+  } );
+  </script>
+   <body>
+    <div class="container">
+      <br>
+      <br>
+      <form action="results" method="POST">
+        <div class="form-group">
+          <label for="searchTitle">Title</label>
+          <input type="text" class="form-control" name="searchTitle" id="searchTitle"  placeholder="Enter Title" required="true">
+        </div>
+        <div class="form-group">
+          <label for="searchText">Text</label>
+          <input type="text" class="form-control" name="searchText" id="searchText" placeholder="Enter Text" required="true">
+        </div>
+        <div class="form-group">
+          <label for="searchDate">Date</label>
+          <input id="datepicker" class="form-control" name="searchDate" id="searchDate" placeholder="Select Date" >
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+   </body>
+</html>
