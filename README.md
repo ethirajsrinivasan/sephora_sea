@@ -1,8 +1,7 @@
-# sephora_sea
+# Sephora Sea
 
 ### Prerequisite
 
-* Install required libraries
 * export GOOGLE_APPLICATION_CREDENTIALS=/path/to/File/
 
 ### Instructions To Run
